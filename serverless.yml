@@ -1,0 +1,15 @@
+name: vespa-motoape
+# 참고: https://github.com/serverless-nextjs/serverless-next.js/issues/184#issuecomment-719137988
+# deploy.yml의 env를 주입해서 사용
+vespa-motoape:
+  component: "@sls-next/serverless-component@3.4.0"
+  inputs:
+    publicDirectoryCache: false
+    bucketName: ${env.BUCKET_NAME}
+    cloudfront:
+      distributionId: ${env.CF_DISTRIBUTION_ID}
+      aliases: ['motoape.com']
+      certificate:
+        cloudFrontDefaultCertificate: false
+        acmCertificateArn: ${env.ACM_CERTIFICATE_ARN}
+        sslSupportMethod: 'sni-only'
