@@ -3,6 +3,4 @@
 - Next.js v12
 - Typescript
 - React-query
-- Styled-components
 - tailwindcss
-- twin.macro
