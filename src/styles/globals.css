@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  src: url('../assets/font/GmarketSansTTFMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding: 0;
@@ -13,12 +21,11 @@
   transition: all 0.5s ease;
 }
 
-@font-face {
-  font-family: 'GmarketSansMedium';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-  src: url('../assets/font/GmarketSansTTFMedium.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+/**
+ * @see https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+ */
+html {
+  scroll-behavior: smooth;
 }
 
 a[x-apple-data-detectors] {
