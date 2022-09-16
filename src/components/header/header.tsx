@@ -1,11 +1,18 @@
-import Image from 'next/image';
-import blackLogo from '@/public/logo/logo-black.png';
+import { useRouter } from 'next/router';
+import { MouseEvent } from 'react';
 
 function Header() {
+  const router = useRouter();
+
+  const handleLogoClick = (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    router.push('/');
+  };
+
   return (
-    <div>
-      <Image src={blackLogo} alt="vespa logo image" width={300} height={59} />
-    </div>
+    <header className="header">
+      <button className="header__logo" onClick={handleLogoClick} />
+    </header>
   );
 }
 
