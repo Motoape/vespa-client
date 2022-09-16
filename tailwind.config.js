@@ -20,43 +20,15 @@ module.exports = {
      * - 메인: 모델 배너영역, carousel에 보이는 이미지 및 2x2 메뉴 영역이 하나로 변함 (모두 1개씩 보이도록)
      * - 서비스: 서비스 소개부분 2x2 영역 1x4로 변경
      */
+    // 기본으로 작성되는 CSS는 1001px보다 큰 화면에서 작동
     screens: {
-      sm: '640px',
-      // => @media (min-width: 640px) { ... }
-
-      md: '768px',
-      // => @media (min-width: 768px) { ... }
-
-      lg: '1024px',
-      // => @media (min-width: 1024px) { ... }
-
-      xl: '1280px',
-      // => @media (min-width: 1280px) { ... }
-
-      '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
-      tablet: '640px',
-      // => @media (min-width: 640px) { ... }
-
-      laptop: '1024px',
-      // => @media (min-width: 1024px) { ... }
-
-      desktop: '1280px',
-      // => @media (min-width: 1280px) { ... }
-      '2xl': { max: '1535px' },
-      // => @media (max-width: 1535px) { ... }
-
-      xl: { max: '1279px' },
-      // => @media (max-width: 1279px) { ... }
-
-      lg: { max: '1023px' },
-      // => @media (max-width: 1023px) { ... }
-
-      md: { max: '767px' },
-      // => @media (max-width: 767px) { ... }
-
-      sm: { max: '639px' },
-      // => @media (max-width: 639px) { ... }
+      // sm: '640px',
+      // 가로 해상도가 768px 보다 작은 화면에 적용
+      mobile: { max: '768px' },
+      // 가로 해상도가 900px 보다 작은 화면에 적용
+      tablet: { max: '900px' },
+      // 가로 해상도가 1000px 보다 작은 화면에 적용
+      pc: { max: '1000px' },
     },
     extend: {
       /**
@@ -83,15 +55,11 @@ module.exports = {
        * - 페이징 inactive 배경색: #000000
        */
       colors: {
-        // blue: '#1fb6ff',
-        // purple: '#7e5bef',
-        // pink: '#ff49db',
-        // orange: '#ff7849',
-        // green: '#13ce66',
-        // yellow: '#ffc82c',
-        // 'gray-dark': '#273444',
-        // gray: '#8492a6',
-        // 'gray-light': '#d3dce6',
+        dark: '#111',
+        'dark-gray': '#333',
+        gray: '#666',
+        'icon-gray': '#858585',
+        'light-gray': '#f2f2f2',
       },
     },
   },

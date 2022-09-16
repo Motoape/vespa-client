@@ -39,10 +39,11 @@ class MyDocument extends Document {
           />
           <meta name="twitter:domain" content="https://vespa-motoape.com/" />
           <link
-            href="http://fonts.cdnfonts.com/css/helvetica-neue-9"
             rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+            crossOrigin="anonymous"
           />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <script
             defer
             src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${KAKAOMAP_APPKEY}&libraries=services,clusterer&autoload=false`}

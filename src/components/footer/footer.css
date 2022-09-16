@@ -1,0 +1,27 @@
+.footer {
+  @apply w-full py-[70px] px-8 bg-dark;
+
+}
+
+.footer__wrapper {
+  @apply max-w-[1200px] mx-auto tablet:flex tablet:flex-col grid grid-cols-2 gap-20;
+}
+
+.footer__logo {
+  @apply flex w-full h-11;
+  background: url(../assets/images/logo-white.png) no-repeat;
+  background-size: auto 100%;
+  background-position: left center;
+}
+
+.footer__right {
+  @apply tablet:flex tablet:flex-col grid grid-cols-2;
+}
+
+.footer__category__title {
+  @apply text-white font-medium mb-5 tablet:hidden;
+}
+
+.footer__icon__link {
+  @apply flex items-center justify-center bg-icon-gray w-[38px] h-[38px] mr-1 rounded-3xl cursor-pointer;
+}
