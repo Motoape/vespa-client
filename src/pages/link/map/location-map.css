@@ -1,0 +1,15 @@
+.location-map {
+  @apply w-full;
+}
+
+.location-map__wrapper {
+  @apply max-w-[1200px] mx-auto tablet:px-3;
+}
+
+.location-map__icon {
+  @apply mr-2 leading-3 tablet:leading-none;
+}
+
+.location-map__transportation {
+  @apply w-24 mr-[5px] tablet:text-sm tablet:w-[70px];
+}

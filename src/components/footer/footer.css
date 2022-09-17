@@ -4,7 +4,7 @@
 }
 
 .footer__wrapper {
-  @apply max-w-[1200px] mx-auto tablet:flex tablet:flex-col grid grid-cols-2 gap-20;
+  @apply max-w-[1200px] mx-auto tablet:flex tablet:flex-col tablet:gap-5 grid grid-cols-2 gap-20;
 }
 
 .footer__logo {

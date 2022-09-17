@@ -1,5 +1,5 @@
 .header {
-  @apply fixed top-0 w-full h-20 z-50 bg-white flex items-center;
+  @apply sticky top-0 w-full h-20 z-50 bg-white flex items-center;
   box-shadow: 0px 5px 5px rgb(0 0 0 / 20%);
 }
 

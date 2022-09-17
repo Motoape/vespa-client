@@ -1,3 +1,6 @@
+import '@styles/globals.css';
+import '@components/components.scss';
+import './pages.scss';
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
@@ -9,9 +12,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { pageview } from '@lib/gtag';
 import Header from '@/src/components/header';
-import '@styles/globals.css';
 import Footer from '../components/footer';
-import '@components/index.scss';
 
 if (APP_STAGE === 'test') {
   require('../mocks');
