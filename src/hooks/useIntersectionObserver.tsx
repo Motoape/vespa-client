@@ -1,27 +1,22 @@
 import { RefObject, useEffect } from 'react';
-import { AxiosError } from 'axios';
-import {
-  FetchNextPageOptions,
-  InfiniteQueryObserverResult,
-} from '@tanstack/react-query';
 
-export interface IUseIntersectionObserverProps<T = unknown>
+export interface IUseIntersectionObserverProps
   extends IntersectionObserverInit {
-  target: RefObject<HTMLDivElement>;
+  target: RefObject<HTMLElement>;
   enabled?: boolean;
-  onIntersect: (
-    options?: FetchNextPageOptions | undefined,
-  ) => Promise<InfiniteQueryObserverResult<T, AxiosError<any, any>>>;
+  onIntersect: any;
+  offIntersect?: any;
 }
 
-function useIntersectionObserver<T>({
+function useIntersectionObserver({
   root,
   rootMargin = '0px',
   threshold = 1.0,
   target,
   enabled = false,
   onIntersect,
-}: IUseIntersectionObserverProps<T>) {
+  offIntersect,
+}: IUseIntersectionObserverProps) {
   useEffect(() => {
     if (!enabled) {
       return;
@@ -35,7 +30,13 @@ function useIntersectionObserver<T>({
 
     const observer = new IntersectionObserver(
       (entries) =>
-        entries.forEach((entry) => entry.isIntersecting && onIntersect()),
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) onIntersect();
+          // 겹치는 영역이 없을 때 실행
+          else {
+            if (offIntersect) offIntersect();
+          }
+        }),
       options,
     );
 

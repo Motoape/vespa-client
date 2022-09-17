@@ -13,6 +13,7 @@ import { useRouter } from 'next/router';
 import { pageview } from '@lib/gtag';
 import Header from '@/src/components/header';
 import Footer from '../components/footer';
+import QuickMenu from '../components/quick-menu';
 
 if (APP_STAGE === 'test') {
   require('../mocks');
@@ -56,6 +57,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <QueryClientProvider client={queryClient}>
         <Header />
         <Component {...pageProps} />
+        <QuickMenu />
         <Footer />
         <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>

@@ -6,7 +6,6 @@ module.exports = {
   ],
   theme: {
     /**
-     * min-width: 1200px;
      * 1000px
      * - header 메뉴가 아이콘으로 변경
      * 900px
@@ -22,7 +21,6 @@ module.exports = {
      */
     // 기본으로 작성되는 CSS는 1001px보다 큰 화면에서 작동
     screens: {
-      // sm: '640px',
       // 가로 해상도가 768px 보다 작은 화면에 적용
       mobile: { max: '768px' },
       // 가로 해상도가 900px 보다 작은 화면에 적용
@@ -61,6 +59,9 @@ module.exports = {
         'icon-gray': '#858585',
         'light-gray': '#f2f2f2',
         'semi-dark-gray': '#262626',
+      },
+      maxWidth: {
+        base: '1200px',
       },
     },
   },
