@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import { LATITUDE, LONGITUDE } from '@constants/map';
-import locationIcon from '@/public/icons/location.png';
-import subwayIcon from '@/public/icons/subway.png';
-import busIcon from '@/public/icons/bus.png';
-import parkingLotIcon from '@/public/icons/parking-lot.png';
+import locationIcon from '@/public/icons/location-map/location.png';
+import subwayIcon from '@/public/icons/location-map/subway.png';
+import busIcon from '@/public/icons/location-map/bus.png';
+import parkingLotIcon from '@/public/icons/location-map/parking-lot.png';
 
 function LocationMap() {
   const mapRef = useRef<HTMLDivElement>(null);

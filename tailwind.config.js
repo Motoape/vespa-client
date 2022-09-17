@@ -60,6 +60,7 @@ module.exports = {
         gray: '#666',
         'icon-gray': '#858585',
         'light-gray': '#f2f2f2',
+        'semi-dark-gray': '#262626',
       },
     },
   },
