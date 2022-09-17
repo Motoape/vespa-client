@@ -1,5 +1,5 @@
 .quick-menu {
-  @apply max-w-base mx-auto my-[50px] tablet:my-[30px];
+  @apply max-w-base mx-auto my-[50px] tablet:my-[30px] px-3;
 }
 
 .quick-menu__fixed-wrapper {
@@ -14,7 +14,7 @@
 .quick-menu__fixed-list__hidden {transform: translateY(100%);}
 
 .quick-menu__fixed-list-item {
-  @apply flex flex-row justify-center items-center hover:bg-[#ededed] mobile:flex-col;
+  @apply flex flex-row justify-center items-center hover:bg-[#ededed] cursor-pointer mobile:flex-col;
 }
 
 .quick-menu__fixed-list-item__label {
@@ -26,11 +26,11 @@
 }
 
 .quick-menu__list-item {
-  @apply flex flex-col justify-center items-center bg-light-gray py-10 tablet:py-4;
+  @apply flex flex-col justify-center items-center bg-light-gray py-10 cursor-pointer tablet:py-4;
 }
 
 .quick-menu__list-item__icon {
-  @apply w-full h-[60px] tablet:h-[42px];
+  @apply w-full h-15 tablet:h-[42px];
   background-repeat: no-repeat;
   background-size: auto 80%;
   background-position: center center;

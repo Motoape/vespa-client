@@ -5,3 +5,5 @@ export const NAVER_BLOG = 'https://blog.naver.com/nana8867';
 export const INSTAGRAM = 'https://www.instagram.com/vespa_sinchon';
 export const YOUTUBE_CHANNEL =
   'https://www.youtube.com/channel/UCTd4PyrzpUjEKUEg_h5m-2w';
+export const NAVER_BOOKING =
+  'https://booking.naver.com/booking/6/bizes/570806?area=bmp';

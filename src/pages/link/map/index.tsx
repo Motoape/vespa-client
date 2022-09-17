@@ -42,7 +42,7 @@ function LocationMap() {
             찾아오시는 길
           </h2>
           <div className="grid gap-7 mt-9 tablet:gap-5">
-            <p className="flex items-center">
+            <div className="flex items-center">
               <i className="location-map__icon">
                 <Image
                   src={locationIcon}
@@ -51,14 +51,14 @@ function LocationMap() {
                   alt="location"
                 />
               </i>
-              <strong className="mr-2 tablet:text-sm">
+              <strong className="flex items-center h-7 mr-2 tablet:text-sm">
                 서울특별시 마포구 월드컵북로 40, 1층
               </strong>
               <span className="text-[#454545] font-medium tablet:text-sm">
                 (02-336-2946)
               </span>
-            </p>
-            <p className="flex items-center">
+            </div>
+            <div className="flex">
               <i className="location-map__icon">
                 <Image src={subwayIcon} width={28} height={28} alt="subway" />
               </i>
@@ -70,8 +70,8 @@ function LocationMap() {
                 <br />
                 합정역(1번출구)도보 15분
               </span>
-            </p>
-            <p className="flex items-center">
+            </div>
+            <div className="flex">
               <i className="location-map__icon">
                 <Image src={busIcon} width={28} height={28} alt="bus" />
               </i>
@@ -81,8 +81,8 @@ function LocationMap() {
                 <br />
                 서울도시가스마포사옥 정류장:[7016]
               </span>
-            </p>
-            <p className="flex items-center">
+            </div>
+            <div className="flex">
               <i className="location-map__icon">
                 <Image
                   src={parkingLotIcon}
@@ -92,8 +92,10 @@ function LocationMap() {
                 />
               </i>
               <strong className="location-map__transportation">주차장</strong>
-              <span className="tablet:text-sm">매장 지하1층 기계식 주차장</span>
-            </p>
+              <span className="flex items-center tablet:text-sm">
+                매장 지하1층 기계식 주차장
+              </span>
+            </div>
           </div>
         </div>
       </div>

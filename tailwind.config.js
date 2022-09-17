@@ -43,7 +43,7 @@ module.exports = {
        * - 글씨 색: #666666
        * - 배경색: #111111
        * 8. 악세서리&파츠 페이지
-       * - 파란색: #2961af
+       * - 파란색: #2962AF
        * - 메뉴 글씨 회색(active): #111111
        * - 메뉴 글씨 회색(inactive): #9c9b9b
        * - 상품 설명 회색: #5d5a5a
@@ -59,9 +59,13 @@ module.exports = {
         'icon-gray': '#858585',
         'light-gray': '#f2f2f2',
         'semi-dark-gray': '#262626',
+        blue: '#2962AF',
       },
       maxWidth: {
         base: '1200px',
+      },
+      spacing: {
+        '15': '3.75rem',
       },
     },
   },

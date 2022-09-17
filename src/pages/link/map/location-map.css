@@ -11,5 +11,5 @@
 }
 
 .location-map__transportation {
-  @apply w-24 mr-[5px] tablet:text-sm tablet:w-[70px];
+  @apply w-24 h-7 flex items-center mr-[5px] tablet:text-sm tablet:w-[70px];
 }
