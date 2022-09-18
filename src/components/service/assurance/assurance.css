@@ -1,0 +1,31 @@
+.assurance__table {
+  @apply w-full border-collapse;
+}
+
+.assurance__table th, td {
+  @apply font-normal text-center whitespace-nowrap p-7.5 mobile:py-[15px] mobile:px-5;
+}
+
+.assurance__table thead th {
+  @apply border-y-2 border-solid border-black text-gray mobile:text-sm;
+}
+
+.assurance__table tbody td {
+  @apply border-b-[1px] border-solid border-[#eee] text-sm text-[#414141] mobile:text-xs;
+}
+
+.assurance__table tbody td h4 {
+  @apply border-b-[1px] border-solid border-[#444] text-[#444] pb-[5px] mobile:text-xs;
+}
+
+.assurance__table tbody td h4 span {
+  @apply inline-block w-44;
+}
+
+.assurance__table tbody td h5 {
+  @apply text-[#787878] py-0.5;
+}
+
+.assurance__table tbody td h5 span {
+  @apply inline-block w-44 mobile:text-xs;
+}

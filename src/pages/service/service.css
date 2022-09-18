@@ -1,0 +1,43 @@
+.service__navigation {
+  @apply sticky top-20 py-4 -mt-2 bg-white border-b-[1px] border-solid border-[#ddd] laptop:top-16;
+}
+
+.service__navigation button {
+  @apply text-xs text-[#999] px-4;
+}
+
+.service__navigation button.active {
+  @apply text-active;
+}
+
+.service__navigation button.border-left {
+  @apply border-l-[1px] border-solid border-[#d0d0d0];
+}
+
+.service__container__box {
+  @apply py-20 mobile:px-2.5 pc:px-5;
+}
+
+.service__container__box-title {
+  @apply font-black text-2xl mobile:text-lg mb-3;
+}
+
+.service__container__box-subtitle {
+  @apply font-normal text-sm text-dark-gray mobile:text-xs;
+}
+
+.service__container__box__content {
+  @apply bg-white border-b-[1px] border-solid border-[#e4e4e4] mt-7.5;
+}
+
+.service__container__box__content h3 {
+  @apply flex items-center text-21 text-dark-gray font-black mb-5 mobile:text-base;
+}
+
+.service__container__box__content i {
+  @apply text-red text-10 mr-2.5;
+}
+
+.service__container__box__content.table-wrapper {
+  @apply py-10 px-15 mobile:py-5 mobile:px-7.5;
+}

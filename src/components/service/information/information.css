@@ -1,0 +1,64 @@
+.information {
+  @apply border-[1px] border-solid border-[#e4e4e4];
+}
+
+.information__table {
+  @apply grid grid-rows-2 grid-cols-2 tablet:grid-rows-4 tablet:grid-cols-none;
+}
+
+.information__table__box {
+  @apply py-9 pl-12.5 pr-10
+    laptop:py-7.5 laptop:pl-5 laptop:pr-10;
+}
+
+.information__table__box.maintenance {
+  @apply py-9 pl-12.5 pr-10 border-r-[1px] border-dashed border-[#e2e2e2] tablet:border-none
+    laptop:py-7.5 laptop:pl-5 laptop:pr-10;
+  background-image: url(../assets/icons/service/maintenance.png);
+  background-repeat: no-repeat;
+  background-size: auto 40%;
+  background-position: right 50px bottom 40px;
+}
+
+.information__table__box.quality {
+  @apply py-9 pl-12.5 pr-10 border-dashed border-[#e2e2e2] tablet:border-t-[1px]
+    laptop:py-7.5 laptop:pl-5 laptop:pr-10;
+  background-image: url(../assets/icons/service/quality.png);
+  background-repeat: no-repeat;
+  background-size: auto 40%;
+  background-position: right 50px bottom 40px;
+}
+
+.information__table__box.genuine-parts {
+  @apply py-9 pl-12.5 pr-10 border-r-[1px] border-t-[1px] border-dashed border-[#e2e2e2] tablet:border-r-0
+    laptop:py-7.5 laptop:pl-5 laptop:pr-10;
+  background-image: url(../assets/icons/service/genuine-parts.png);
+  background-repeat: no-repeat;
+  background-size: auto 40%;
+  background-position: right 50px bottom 40px;
+}
+
+.information__table__box.warranty {
+  @apply py-9 pl-12.5 pr-10 border-t-[1px] border-dashed border-[#e2e2e2]
+    laptop:py-7.5 laptop:pl-5 laptop:pr-10;
+  background-image: url(../assets/icons/service/warranty.png);
+  background-repeat: no-repeat;
+  background-size: auto 40%;
+  background-position: right 50px bottom 40px;
+}
+
+.information__table__box-divider {
+  @apply w-[15px] mb-4.5 border-t-2 border-solid border-red;
+}
+
+.information__table__box-content {
+  @apply pr-10;
+}
+
+.information__table__box-content h4 {
+  @apply font-bold text-sm;
+}
+
+.information__table__box-content p {
+  @apply mt-4.5 font-normal text-xs text-gray;
+}

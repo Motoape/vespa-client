@@ -1,0 +1,15 @@
+.cost {
+  @apply border-[1px] border-solid border-[#e4e4e4];
+}
+
+.cost__table th, td {
+  @apply font-normal text-center whitespace-nowrap p-7 mobile:py-[15px] mobile:px-5;
+}
+
+.cost__table thead th {
+  @apply border-y-2 border-solid border-black text-gray mobile:text-sm;
+}
+
+.cost__table tbody td {
+  @apply border-b-[1px] border-solid border-[#eee] text-sm text-[#414141] mobile:text-xs;
+}
