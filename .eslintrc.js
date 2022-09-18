@@ -26,7 +26,13 @@ module.exports = {
     ecmaVersion: 13,
     sourceType: 'module',
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
+  plugins: [
+    'react',
+    'react-hooks',
+    '@typescript-eslint',
+    'prettier',
+    'unused-imports',
+  ],
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/prefer-stateless-function': 'off',
@@ -43,6 +49,9 @@ module.exports = {
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
     '@typescript-eslint/naming-convention': 'off',
     'no-debugger': 'off',
+    '@typescript-eslint/no-empty-interface': 'off',
+    'unused-imports/no-unused-imports': 'error',
+    '@typescript-eslint/no-unused-vars': 'warn',
   },
   globals: {
     React: 'writable',
