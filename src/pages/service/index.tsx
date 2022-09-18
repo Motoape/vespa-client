@@ -1,32 +1,63 @@
 import Image from 'next/image';
 import bannerImg from '@assets/images/banner-service.jpg';
-import { MouseEvent, useRef, useState } from 'react';
+import { MouseEvent, useCallback, useRef, useState } from 'react';
 import Information from '@/src/components/service/information';
 import Assuarnce from '@/src/components/service/assurance';
 import Cost from '@/src/components/service/cost';
 import classNames from 'classnames';
+import useIntersectionObserver from '@/src/hooks/useIntersectionObserver';
 
 function ServicePage() {
   const navRef = useRef<HTMLElement>(null);
+  const infoRef = useRef<HTMLDivElement>(null);
+  const assuranceRef = useRef<HTMLDivElement>(null);
+  const costRef = useRef<HTMLDivElement>(null);
   const [navButtons, setNavButtons] = useState([
     { id: 'info', text: '서비스 소개', isActive: true },
     { id: 'assurance', text: '보증제도', isActive: false },
     { id: 'cost', text: '권장 표준 공임 제도', isActive: false },
   ]);
 
-  const executeScroll = (event: MouseEvent<HTMLButtonElement>) => {
-    const targetId = event.currentTarget.dataset.id as string;
-    const el = document.getElementById(targetId);
-    if (el) {
+  const handleActiveButton = useCallback(
+    (targetId: string) => {
       const newNavButtons = navButtons.map((btn) => ({
         ...btn,
         isActive: btn.id === targetId,
       }));
       setNavButtons(newNavButtons);
+    },
+    [navButtons],
+  );
 
+  const executeScroll = (event: MouseEvent<HTMLButtonElement>) => {
+    const targetId = event.currentTarget.dataset.id as string;
+    const el = document.getElementById(targetId);
+    if (el) {
+      handleActiveButton(targetId);
       window.scrollTo(0, el.offsetTop - 50);
     }
   };
+
+  useIntersectionObserver({
+    target: infoRef,
+    threshold: 0.6,
+    enabled: true,
+    onIntersect: () => handleActiveButton('info'),
+  });
+
+  useIntersectionObserver({
+    target: assuranceRef,
+    threshold: 0.6,
+    enabled: true,
+    onIntersect: () => handleActiveButton('assurance'),
+  });
+
+  useIntersectionObserver({
+    target: costRef,
+    threshold: 0.6,
+    enabled: true,
+    onIntersect: () => handleActiveButton('cost'),
+  });
 
   return (
     <section className="service">
@@ -49,7 +80,11 @@ function ServicePage() {
         </div>
       </nav>
       <div className="service__container">
-        <div id="info" className="service__container__box bg-[#F4F4F4]">
+        <div
+          ref={infoRef}
+          id="info"
+          className="service__container__box bg-[#F4F4F4]"
+        >
           <div className="max-w-[1100px] mx-auto">
             <h2 className="service__container__box-title">
               Piaggio Vespa Service
@@ -60,7 +95,11 @@ function ServicePage() {
             <Information />
           </div>
         </div>
-        <div id="assurance" className="service__container__box bg-[#EAEAEA]">
+        <div
+          ref={assuranceRef}
+          id="assurance"
+          className="service__container__box bg-[#EAEAEA]"
+        >
           <div className="max-w-[1100px] mx-auto">
             <h2 className="service__container__box-title">보증제도</h2>
             <h4 className="service__container__box-subtitle">
@@ -73,7 +112,11 @@ function ServicePage() {
             <Assuarnce />
           </div>
         </div>
-        <div id="cost" className="service__container__box bg-[#F7F7F7]">
+        <div
+          ref={costRef}
+          id="cost"
+          className="service__container__box bg-[#F7F7F7]"
+        >
           <div className="max-w-[1100px] mx-auto">
             <h2 className="service__container__box-title">표준 공임 제도</h2>
             <h4 className="service__container__box-subtitle">
