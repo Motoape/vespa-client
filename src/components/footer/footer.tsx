@@ -78,7 +78,7 @@ function Footer() {
           </div>
           <div>
             <h1 className="footer__category__title">CS CENTER</h1>
-            <h2 className="text-white font-bold text-[28px] mb-4 tablet:pt-5">
+            <h2 className="text-white font-bold text-[28px] mb-4 laptop:pt-5">
               02-336-2946
             </h2>
             <h3 className="text-gray text-sm">월~토 10:30 - 19:00</h3>

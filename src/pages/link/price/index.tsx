@@ -112,7 +112,7 @@ function Price() {
             </button>
           </div>
         </div>
-        <h2 className="price__container__table-title mt-15 tablet:mt-10">
+        <h2 className="price__container__table-title mt-15 laptop:mt-10">
           PIAGGIO
         </h2>
         <div className="price__container__table-wrapper">

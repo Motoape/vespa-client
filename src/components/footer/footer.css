@@ -4,7 +4,7 @@
 }
 
 .footer__wrapper {
-  @apply max-w-base mx-auto tablet:flex tablet:flex-col tablet:gap-5 grid grid-cols-2 gap-20;
+  @apply max-w-base mx-auto laptop:flex laptop:flex-col laptop:gap-5 grid grid-cols-2 gap-20;
 }
 
 .footer__logo {
@@ -15,11 +15,11 @@
 }
 
 .footer__right {
-  @apply tablet:flex tablet:flex-col grid grid-cols-2;
+  @apply laptop:flex laptop:flex-col grid grid-cols-2;
 }
 
 .footer__category__title {
-  @apply text-white font-medium mb-5 tablet:hidden;
+  @apply text-white font-medium mb-5 laptop:hidden;
 }
 
 .footer__icon__link {

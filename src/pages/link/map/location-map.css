@@ -3,13 +3,13 @@
 }
 
 .location-map__wrapper {
-  @apply max-w-base mx-auto tablet:px-3;
+  @apply max-w-base mx-auto laptop:px-3;
 }
 
 .location-map__icon {
-  @apply mr-2 leading-3 tablet:leading-none;
+  @apply mr-2 leading-3 laptop:leading-none;
 }
 
 .location-map__transportation {
-  @apply w-24 h-7 flex items-center mr-1.25 tablet:text-sm tablet:w-17.5;
+  @apply w-24 h-7 flex items-center mr-1.25 laptop:text-sm laptop:w-17.5;
 }

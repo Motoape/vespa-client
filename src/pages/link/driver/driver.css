@@ -1,5 +1,5 @@
 .driver {
-  @apply max-w-base mx-auto tablet:px-4;
+  @apply max-w-base mx-auto laptop:px-4;
 }
 
 .driver__title-wrapper {
@@ -7,7 +7,7 @@
 }
 
 .driver__stepper {
-  @apply mt-28 px-4 tablet:mt-14;
+  @apply mt-28 px-4 laptop:mt-14;
 }
 
 .driver__stepper__list {
@@ -15,13 +15,13 @@
 }
 
 .driver__stepper__list-item {
-  @apply flex flex-col items-center text-gray text-center font-semibold tablet:text-xs;
+  @apply flex flex-col items-center text-gray text-center font-semibold laptop:text-xs;
 }
 
 .driver__subscribe__info {
-  @apply border-t-[1px] border-solid border-[#e2e2e2] py-7.5 px-12.5 mt-15 tablet:py-5 tablet:px-2.5;
+  @apply border-t-[1px] border-solid border-[#e2e2e2] py-7.5 px-12.5 mt-15 laptop:py-5 laptop:px-2.5;
 }
 
 .driver__subscribe__info-text {
-  @apply text-gray font-medium mt-1 tablet:text-xs;
+  @apply text-gray font-medium mt-1 laptop:text-xs;
 }

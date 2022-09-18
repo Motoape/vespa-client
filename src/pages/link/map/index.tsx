@@ -30,18 +30,18 @@ function LocationMap() {
   return (
     <section className="location-map">
       <div className="location-map__wrapper">
-        <h2 className="text-center font-bold text-dark-gray text-21 py-12 tablet:font-medium tablet:py-5">
+        <h2 className="text-center font-bold text-dark-gray text-21 py-12 laptop:font-medium laptop:py-5">
           피아지오 베스파 신촌점 오시는 길
         </h2>
         <div
           ref={mapRef}
           className="w-full h-[500px] border-[1px] border-solid border-[#D9D9D9]"
         />
-        <div className="px-5 pt-5 mt-10 border-t-[1px] border-solid border-[#D9D9D9] tablet:px-0 tablet:mt-7.5 ">
-          <h2 className="px-3 border-l-4 border-solid border-[#CBCBCB] font-black tablet:text-sm">
+        <div className="px-5 pt-5 mt-10 border-t-[1px] border-solid border-[#D9D9D9] laptop:px-0 laptop:mt-7.5 ">
+          <h2 className="px-3 border-l-4 border-solid border-[#CBCBCB] font-black laptop:text-sm">
             찾아오시는 길
           </h2>
-          <div className="grid gap-7 mt-9 tablet:gap-5">
+          <div className="grid gap-7 mt-9 laptop:gap-5">
             <div className="flex items-center">
               <i className="location-map__icon">
                 <Image
@@ -51,10 +51,10 @@ function LocationMap() {
                   alt="location"
                 />
               </i>
-              <strong className="flex items-center h-7 mr-2 tablet:text-sm">
+              <strong className="flex items-center h-7 mr-2 laptop:text-sm">
                 서울특별시 마포구 월드컵북로 40, 1층
               </strong>
-              <span className="text-[#454545] font-medium tablet:text-sm">
+              <span className="text-[#454545] font-medium laptop:text-sm">
                 (02-336-2946)
               </span>
             </div>
@@ -63,7 +63,7 @@ function LocationMap() {
                 <Image src={subwayIcon} width={28} height={28} alt="subway" />
               </i>
               <strong className="location-map__transportation">지하철</strong>
-              <span className="tablet:text-sm">
+              <span className="laptop:text-sm">
                 홍대입구역(1번출구)도보 7분
                 <br />
                 망원역(1번출구)도보 10분
@@ -76,7 +76,7 @@ function LocationMap() {
                 <Image src={busIcon} width={28} height={28} alt="bus" />
               </i>
               <strong className="location-map__transportation">버스</strong>
-              <span className="tablet:text-sm">
+              <span className="laptop:text-sm">
                 청원빌딩 정류장:[마포06]
                 <br />
                 서울도시가스마포사옥 정류장:[7016]
@@ -92,7 +92,7 @@ function LocationMap() {
                 />
               </i>
               <strong className="location-map__transportation">주차장</strong>
-              <span className="flex items-center tablet:text-sm">
+              <span className="flex items-center laptop:text-sm">
                 매장 지하1층 기계식 주차장
               </span>
             </div>

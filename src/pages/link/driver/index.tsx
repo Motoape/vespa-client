@@ -9,10 +9,10 @@ function Driver() {
   return (
     <section className="driver">
       <div className="driver__title-wrapper">
-        <h2 className="font-black text-[2.625rem] pt-9 tablet:text-2xl tablet:pt-5">
+        <h2 className="font-black text-[2.625rem] pt-9 laptop:text-2xl laptop:pt-5">
           시승신청
         </h2>
-        <h4 className="text-center text-dark-gray font-medium mt-5 tablet:mt-4 tablet:text-sm">
+        <h4 className="text-center text-dark-gray font-medium mt-5 laptop:mt-4 laptop:text-sm">
           아래 {`'베스파 신촌점 시승 신청'`} 링크를 통해 시승 신청 예약을 하실
           수 있습니다.
         </h4>
@@ -42,7 +42,7 @@ function Driver() {
       </div>
       <div className="flex justify-center items-center mt-15">
         <button
-          className="w-[250px] h-[45px] bg-blue text-white text-sm font-medium tablet:text-xs"
+          className="w-[250px] h-[45px] bg-blue text-white text-sm font-medium laptop:text-xs"
           onClick={() => openNewTab(NAVER_BOOKING)}
         >
           베스파 신촌점 시승 신청

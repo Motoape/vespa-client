@@ -1,5 +1,5 @@
 .purchase {
-  @apply max-w-base mx-auto tablet:px-4;
+  @apply max-w-base mx-auto laptop:px-4;
 }
 
 .purchase__title-wrapper {
@@ -7,7 +7,7 @@
 }
 
 .purchase__stepper {
-  @apply mt-28 px-4 tablet:mt-14;
+  @apply mt-28 px-4 laptop:mt-14;
 }
 
 .purchase__stepper__list {
@@ -15,5 +15,5 @@
 }
 
 .purchase__stepper__list-item {
-  @apply flex flex-col items-center text-gray text-center font-semibold tablet:text-xs;
+  @apply flex flex-col items-center text-gray text-center font-semibold laptop:text-xs;
 }

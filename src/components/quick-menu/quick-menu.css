@@ -1,5 +1,5 @@
 .quick-menu {
-  @apply max-w-base mx-auto my-12.5 tablet:my-7.5 px-3;
+  @apply max-w-base mx-auto my-12.5 laptop:my-7.5 px-3;
 }
 
 .quick-menu__fixed-wrapper {
@@ -18,7 +18,7 @@
 }
 
 .quick-menu__fixed-list-item__label {
-  @apply inline-block ml-1 text-base font-bold text-[#424242] tablet:text-xs;
+  @apply inline-block ml-1 text-base font-bold text-[#424242] laptop:text-xs;
 }
 
 .quick-menu__list {
@@ -26,11 +26,11 @@
 }
 
 .quick-menu__list-item {
-  @apply flex flex-col justify-center items-center bg-light-gray py-10 cursor-pointer tablet:py-4;
+  @apply flex flex-col justify-center items-center bg-light-gray py-10 cursor-pointer laptop:py-4;
 }
 
 .quick-menu__list-item__icon {
-  @apply w-full h-15 tablet:h-[42px];
+  @apply w-full h-15 laptop:h-[42px];
   background-repeat: no-repeat;
   background-size: auto 80%;
   background-position: center center;
@@ -55,5 +55,5 @@
 }
 
 .quick-menu__list-item__label {
-  @apply inline-block mt-1 text-lg font-bold text-semi-dark-gray tablet:text-xs;
+  @apply inline-block mt-1 text-lg font-bold text-semi-dark-gray laptop:text-xs;
 }
