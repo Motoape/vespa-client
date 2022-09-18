@@ -19,7 +19,7 @@
 }
 
 .driver__subscribe__info {
-  @apply border-t-[1px] border-solid border-[#e2e2e2] py-[1.875rem] px-[3.125rem] mt-15 tablet:py-5 tablet:px-[0.625rem];
+  @apply border-t-[1px] border-solid border-[#e2e2e2] py-7.5 px-12.5 mt-15 tablet:py-5 tablet:px-2.5;
 }
 
 .driver__subscribe__info-text {

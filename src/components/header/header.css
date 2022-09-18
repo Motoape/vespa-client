@@ -4,7 +4,7 @@
 }
 
 .header__logo {
-  @apply flex w-full h-[3.75rem] ml-5;
+  @apply flex w-full h-15 ml-5;
   background: url(../assets/images/logo-black.png) no-repeat;
   background-size: auto 70%;
   background-position: left center;

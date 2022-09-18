@@ -17,11 +17,3 @@
 .purchase__stepper__list-item {
   @apply flex flex-col items-center text-gray text-center font-semibold tablet:text-xs;
 }
-
-.purchase__subscribe__info {
-  @apply border-t-[1px] border-solid border-[#e2e2e2] py-[1.875rem] px-[3.125rem] mt-15 tablet:py-5 tablet:px-[0.625rem];
-}
-
-.purchase__subscribe__info-text {
-  @apply text-gray font-medium mt-1 tablet:text-xs;
-}

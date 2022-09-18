@@ -30,14 +30,14 @@ function LocationMap() {
   return (
     <section className="location-map">
       <div className="location-map__wrapper">
-        <h2 className="text-center font-bold text-dark-gray text-[1.3125rem] py-12 tablet:font-medium tablet:py-5">
+        <h2 className="text-center font-bold text-dark-gray text-21 py-12 tablet:font-medium tablet:py-5">
           피아지오 베스파 신촌점 오시는 길
         </h2>
         <div
           ref={mapRef}
           className="w-full h-[500px] border-[1px] border-solid border-[#D9D9D9]"
         />
-        <div className="px-5 pt-5 mt-10 border-t-[1px] border-solid border-[#D9D9D9] tablet:px-0 tablet:mt-[1.875rem] ">
+        <div className="px-5 pt-5 mt-10 border-t-[1px] border-solid border-[#D9D9D9] tablet:px-0 tablet:mt-7.5 ">
           <h2 className="px-3 border-l-4 border-solid border-[#CBCBCB] font-black tablet:text-sm">
             찾아오시는 길
           </h2>

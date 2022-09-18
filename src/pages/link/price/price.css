@@ -1,0 +1,62 @@
+.price {
+  @apply max-w-base mx-auto px-4;
+}
+
+.price__title {
+  @apply text-dark-gray text-center font-bold text-21 py-9 tablet:py-5;
+}
+
+.price__container__table-title {
+  @apply text-dark-gray font-medium px-2.5 py-1 mb-8.75 border-l-4 border-solid border-dark
+    tablet:mb-[25px] tablet:text-sm;
+}
+
+.price__container__table-wrapper {
+  @apply overflow-auto;
+}
+
+.price__container__table {
+  @apply w-full border-collapse whitespace-nowrap;
+}
+
+.price__container__table thead th {
+  @apply bg-[#f4f4f4] py-2.5 px-8.75 font-black text-sm
+    border-y-[1px] border-t-[#989898] border-b-[#b0b0b0];
+}
+
+.price__container__table th {
+  @apply text-left;
+}
+
+.price__container__table tbody td {
+  @apply py-2.5 px-[35px] border-b-[1px] border-solid border-[#e6e6e6] text-sm font-medium text-dark-gray
+    tablet:text-xs;
+}
+
+.price__container__table tbody td.tb-b-r {
+  @apply border-r-[1px] border-solid border-[#e6e6e6];
+}
+
+.price__container__table-files {
+  @apply w-full pl-2.5 flex items-center;
+}
+
+.price__container__table-files button {
+  @apply py-2.5 pr-7.5 font-semibold cursor-pointer;
+}
+
+.price__container__table-files i {
+  @apply mr-2.5;
+}
+
+.price__information {
+  @apply mt-22.5;
+}
+
+.price__information p {
+  @apply font-medium text-lg text-dark-gray tablet:text-sm;
+}
+
+.price__information p:not(:first-child) {
+  @apply mt-3;
+}
