@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import insta from '@/public/icons/footer/insta.png';
-import kakao from '@/public/icons/footer/kakao.png';
-import naver from '@/public/icons/footer/naver.png';
-import youtube from '@/public/icons/footer/youtube.png';
+import insta from '@assets/icons/footer/insta.png';
+import kakao from '@assets/icons/footer/kakao.png';
+import naver from '@assets/icons/footer/naver.png';
+import youtube from '@assets/icons/footer/youtube.png';
 import { openNewTab } from '@/src/utils/open-new-tab';
 import {
   BUISENESS_CONFIRM,
