@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import bannerImg from '@assets/images/banner-service.jpg';
 import { MouseEvent, useCallback, useRef, useState } from 'react';
 import Information from '@/src/components/service/information';
@@ -6,6 +5,7 @@ import Assuarnce from '@/src/components/service/assurance';
 import Cost from '@/src/components/service/cost';
 import classNames from 'classnames';
 import useIntersectionObserver from '@/src/hooks/useIntersectionObserver';
+import BlurImage from '@components/blur-image/blur-image';
 
 function ServicePage() {
   const navRef = useRef<HTMLElement>(null);
@@ -61,9 +61,10 @@ function ServicePage() {
 
   return (
     <section className="service">
-      <Image src={bannerImg} alt="banner" />
+      <div className="py-5 pc:py-0" />
+      <BlurImage src={bannerImg} alt="banner" />
       <nav ref={navRef} className="service__navigation">
-        <div className="grid grid-cols-[90px_80px_130px] justify-center">
+        <div className="service__navigation-wrapper">
           {navButtons.map(({ id, text, isActive }) => (
             <button
               key={id}

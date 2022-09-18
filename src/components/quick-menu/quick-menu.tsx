@@ -2,11 +2,11 @@ import useIntersectionObserver from '@/src/hooks/useIntersectionObserver';
 import { useRouter } from 'next/router';
 import { MouseEvent, useRef, useState } from 'react';
 import classNames from 'classnames';
-import Image from 'next/image';
 import consultingIcon from '@assets/icons/quick-menu/consulting.png';
 import billingIcon from '@assets/icons/quick-menu/billing.png';
 import locationIcon from '@assets/icons/quick-menu/location.png';
 import motorcycleIcon from '@assets/icons/quick-menu/motorcycle.png';
+import BlurImage from '../blur-image/blur-image';
 
 function QuickMenu() {
   const router = useRouter();
@@ -46,7 +46,7 @@ function QuickMenu() {
             data-url="/link/purchase"
             onClick={onMenuItemClick}
           >
-            <Image
+            <BlurImage
               src={consultingIcon}
               alt="consulting"
               width={20}
@@ -61,7 +61,7 @@ function QuickMenu() {
             data-url="/link/price"
             onClick={onMenuItemClick}
           >
-            <Image src={billingIcon} alt="billing" width={20} height={20} />
+            <BlurImage src={billingIcon} alt="billing" width={20} height={20} />
             <label className="quick-menu__fixed-list-item__label">가격표</label>
           </li>
           <li
@@ -69,7 +69,12 @@ function QuickMenu() {
             data-url="/link/map"
             onClick={onMenuItemClick}
           >
-            <Image src={locationIcon} alt="location" width={30} height={30} />
+            <BlurImage
+              src={locationIcon}
+              alt="location"
+              width={30}
+              height={30}
+            />
             <label className="quick-menu__fixed-list-item__label">
               딜러위치
             </label>
@@ -79,7 +84,12 @@ function QuickMenu() {
             data-url="/link/driver"
             onClick={onMenuItemClick}
           >
-            <Image src={motorcycleIcon} alt="driver" width={30} height={30} />
+            <BlurImage
+              src={motorcycleIcon}
+              alt="driver"
+              width={30}
+              height={30}
+            />
             <label className="quick-menu__fixed-list-item__label">
               시승신청
             </label>

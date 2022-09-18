@@ -1,10 +1,10 @@
-import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import { LATITUDE, LONGITUDE } from '@constants/map';
 import locationIcon from '@assets/icons/location-map/location.png';
 import subwayIcon from '@assets/icons/location-map/subway.png';
 import busIcon from '@assets/icons/location-map/bus.png';
 import parkingLotIcon from '@assets/icons/location-map/parking-lot.png';
+import BlurImage from '@components/blur-image/blur-image';
 
 function LocationMap() {
   const mapRef = useRef<HTMLDivElement>(null);
@@ -44,7 +44,7 @@ function LocationMap() {
           <div className="grid gap-7 mt-9 laptop:gap-5">
             <div className="flex items-center">
               <i className="location-map__icon">
-                <Image
+                <BlurImage
                   src={locationIcon}
                   width={28}
                   height={28}
@@ -60,7 +60,12 @@ function LocationMap() {
             </div>
             <div className="flex">
               <i className="location-map__icon">
-                <Image src={subwayIcon} width={28} height={28} alt="subway" />
+                <BlurImage
+                  src={subwayIcon}
+                  width={28}
+                  height={28}
+                  alt="subway"
+                />
               </i>
               <strong className="location-map__transportation">지하철</strong>
               <span className="laptop:text-sm">
@@ -73,7 +78,7 @@ function LocationMap() {
             </div>
             <div className="flex">
               <i className="location-map__icon">
-                <Image src={busIcon} width={28} height={28} alt="bus" />
+                <BlurImage src={busIcon} width={28} height={28} alt="bus" />
               </i>
               <strong className="location-map__transportation">버스</strong>
               <span className="laptop:text-sm">
@@ -84,7 +89,7 @@ function LocationMap() {
             </div>
             <div className="flex">
               <i className="location-map__icon">
-                <Image
+                <BlurImage
                   src={parkingLotIcon}
                   width={28}
                   height={28}

@@ -2,6 +2,10 @@
   @apply sticky top-20 py-4 -mt-2 bg-white border-b-[1px] border-solid border-[#ddd] laptop:top-16;
 }
 
+.service__navigation-wrapper {
+  @apply grid grid-cols-[90px_80px_130px] justify-center;
+}
+
 .service__navigation button {
   @apply text-xs text-[#999] px-4;
 }

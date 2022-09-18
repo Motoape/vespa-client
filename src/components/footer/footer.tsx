@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import insta from '@assets/icons/footer/insta.png';
 import kakao from '@assets/icons/footer/kakao.png';
 import naver from '@assets/icons/footer/naver.png';
@@ -10,7 +9,8 @@ import {
   KAKAOTALK,
   NAVER_BLOG,
   YOUTUBE_CHANNEL,
-} from '@/src/constants/links';
+} from '@constants/links';
+import BlurImage from '../blur-image/blur-image';
 
 function Footer() {
   return (
@@ -54,25 +54,25 @@ function Footer() {
                 className="footer__icon__link"
                 onClick={() => openNewTab(KAKAOTALK)}
               >
-                <Image src={kakao} alt="kakao" width={30} height={30} />
+                <BlurImage src={kakao} alt="kakao" width={30} height={30} />
               </li>
               <li
                 className="footer__icon__link"
                 onClick={() => openNewTab(NAVER_BLOG)}
               >
-                <Image src={naver} alt="naver" width={30} height={30} />
+                <BlurImage src={naver} alt="naver" width={30} height={30} />
               </li>
               <li
                 className="footer__icon__link"
                 onClick={() => openNewTab(INSTAGRAM)}
               >
-                <Image src={insta} alt="insta" width={30} height={30} />
+                <BlurImage src={insta} alt="insta" width={30} height={30} />
               </li>
               <li
                 className="footer__icon__link"
                 onClick={() => openNewTab(YOUTUBE_CHANNEL)}
               >
-                <Image src={youtube} alt="youtube" width={30} height={30} />
+                <BlurImage src={youtube} alt="youtube" width={30} height={30} />
               </li>
             </ul>
           </div>

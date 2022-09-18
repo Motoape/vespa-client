@@ -82,6 +82,10 @@ module.exports = {
       fontSize: {
         '10': '0.625rem', // 10px
         '21': '1.3125rem', // 21px
+        '32': '2rem', // 32px
+      },
+      boxShadow: {
+        base: '0px 5px 5px rgb(0 0 0 / 20%)',
       },
     },
   },

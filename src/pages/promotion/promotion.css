@@ -1,0 +1,47 @@
+.promotion__navigation {
+  @apply py-2.5 shadow-base bg-white border-b-[1px] border-solid border-[#ddd] laptop:top-16
+}
+
+.promotion__navigation-wrapper {
+  @apply grid grid-cols-2 justify-center h-10 w-1/2 mx-auto laptop:w-full;
+}
+
+.promotion__navigation button {
+  @apply text-xs text-[#999] px-4;
+}
+
+.promotion__navigation button.active {
+  @apply font-bold;
+}
+
+.promotion__navigation button.border-left {
+  @apply border-l-[1px] border-solid border-[#d0d0d0];
+}
+
+.promotion__container {
+  @apply max-w-base mx-auto px-2.5 mt-22.5 laptop:mt-12.5;
+}
+
+.promotion__container__header {
+  @apply flex justify-between items-center;
+}
+
+.promotion__container__header__select-wrapper {
+  @apply relative flex items-center mr-3 border-[1px] border-solid border-[#ddd];
+}
+
+.promotion__container__header__select-wrapper select {
+  @apply py-3 pl-4 pr-8 text-xs z-10 bg-transparent;
+}
+
+.promotion__container__header__input-wrapper {
+  @apply flex py-[5px] border-[1px] border-solid border-[#ddd];
+}
+
+.promotion__container__header__input-wrapper input {
+  @apply w-[150px] h-7 px-[5px] border-none;
+}
+
+.promotion__container__header__input-wrapper button {
+  @apply w-15 h-7 border-l-[1px] border-solid border-[#ddd] text-gray;
+}

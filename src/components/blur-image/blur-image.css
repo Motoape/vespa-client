@@ -1,0 +1,11 @@
+.blur-image {
+  @apply w-full;
+}
+
+.blur-image span {
+  position: unset !important;
+}
+
+.blur-image span .auto {
+  @apply !object-contain !relative !h-auto;
+}

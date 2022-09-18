@@ -1,9 +1,9 @@
-import Image from 'next/image';
 import externalLinkIcon from '@assets/icons/driver/external-link.png';
 import choiceMotorcycleIcon from '@assets/icons/purchase/choice-motorcycle.png';
 import checkSquareIcon from '@assets/icons/driver/check-square.png';
 import { openNewTab } from '@/src/utils/open-new-tab';
-import { NAVER_BOOKING } from '@/src/constants/links';
+import { NAVER_BOOKING } from '@constants/links';
+import BlurImage from '@components/blur-image/blur-image';
 
 function Driver() {
   return (
@@ -20,7 +20,7 @@ function Driver() {
       <div className="driver__stepper">
         <ul className="driver__stepper__list">
           <li className="driver__stepper__list-item">
-            <Image src={externalLinkIcon} alt="external-link" />
+            <BlurImage src={externalLinkIcon} alt="external-link" />
             <p className="pt-1">01.{`'베스파 신촌점 시승 신청'`}</p>
             <p>예약 페이지 이동</p>
           </li>
@@ -28,14 +28,14 @@ function Driver() {
             <i className="fas fa-chevron-right" />
           </li>
           <li className="driver__stepper__list-item">
-            <Image src={choiceMotorcycleIcon} alt="choice-motorcycle" />
+            <BlurImage src={choiceMotorcycleIcon} alt="choice-motorcycle" />
             <p className="pt-1">02.차량 및 시승날짜 선택</p>
           </li>
           <li className="driver__stepper__list-item justify-center -mt-7.5">
             <i className="fas fa-chevron-right" />
           </li>
           <li className="driver__stepper__list-item">
-            <Image src={checkSquareIcon} alt="check-square" />
+            <BlurImage src={checkSquareIcon} alt="check-square" />
             <p className="pt-1">03.시승 신청 날짜에 방문</p>
           </li>
         </ul>

@@ -37,3 +37,15 @@ a[x-apple-data-detectors] {
 	font-weight: inherit !important;
 	line-height: inherit !important;
 }
+
+/* 익스플로러 기본 화살표 없애기 */
+select::-ms-expand {
+  display: none;
+}
+/* 화살표 기본 css 없애기 */
+select {
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

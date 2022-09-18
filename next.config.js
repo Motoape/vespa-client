@@ -33,4 +33,11 @@ module.exports = {
 
     return config;
   },
+  /**
+   * 외부 url image 사용
+   * @see https://nextjs.org/docs/messages/next-image-unconfigured-host
+   */
+  images: {
+    domains: ['vespa-bucket.s3.ap-northeast-2.amazonaws.com'],
+  },
 };

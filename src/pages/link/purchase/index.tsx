@@ -1,9 +1,9 @@
-import Image from 'next/image';
 import choiceMotorcycleIcon from '@assets/icons/purchase/choice-motorcycle.png';
 import contractIcon from '@assets/icons/purchase/contract.png';
 import consultIcon from '@assets/icons/purchase/consult.png';
 import { openNewTab } from '@/src/utils/open-new-tab';
-import { KAKAOTALK } from '@/src/constants/links';
+import { KAKAOTALK } from '@constants/links';
+import BlurImage from '@components/blur-image/blur-image';
 
 function Purchase() {
   return (
@@ -22,14 +22,14 @@ function Purchase() {
       <div className="purchase__stepper">
         <ul className="purchase__stepper__list">
           <li className="purchase__stepper__list-item">
-            <Image src={choiceMotorcycleIcon} alt="choice-motorcycle" />
+            <BlurImage src={choiceMotorcycleIcon} alt="choice-motorcycle" />
             <p className="pt-1">01.차량선택</p>
           </li>
           <li className="purchase__stepper__list-item justify-center -mt-7.5">
             <i className="fas fa-chevron-right" />
           </li>
           <li className="purchase__stepper__list-item">
-            <Image src={contractIcon} alt="contract" />
+            <BlurImage src={contractIcon} alt="contract" />
             <p className="pt-1">02.{`'베스파 신촌점'`}</p>
             <p>채널 추가 후 문의</p>
           </li>
@@ -37,7 +37,7 @@ function Purchase() {
             <i className="fas fa-chevron-right" />
           </li>
           <li className="purchase__stepper__list-item">
-            <Image src={consultIcon} alt="consult" />
+            <BlurImage src={consultIcon} alt="consult" />
             <p className="pt-1">03.차량구매 상담진행</p>
           </li>
         </ul>
