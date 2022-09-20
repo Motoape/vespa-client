@@ -1,0 +1,66 @@
+.pc-menu__nav__1st {
+  @apply mx-auto h-full pr-12;
+}
+
+.pc-menu__nav__1st-list {
+  @apply h-full flex justify-center items-center;
+}
+
+.pc-menu__nav__1st-list > li {
+  @apply h-full flex items-center text-[#111] mr-2.5 px-3 font-black text-sm cursor-pointer;
+}
+
+.pc-menu__nav__1st-list > li:hover {
+  @apply shadow-hover;
+}
+
+.pc-menu__nav__2nd {
+  @apply absolute w-full h-14 top-20 left-0 bg-white flex items-center justify-center border-b-[1px] border-solid border-[#ccc]
+    opacity-0 invisible;
+}
+
+.pc-menu__nav__2nd > li {
+  @apply mx-8 text-gray font-medium text-sm h-full flex items-center px-2;
+}
+
+.pc-menu__nav__2nd > li:hover {
+  @apply shadow-hover text-dark-gray;
+}
+
+.pc-menu__nav__1st-list > li:hover .pc-menu__nav__2nd {
+  @apply shadow-inner opacity-100 visible;
+}
+
+.pc-menu__nav__3rd {
+  @apply absolute w-full h-14 top-14 left-0 bg-[#f8f8f8] flex items-center justify-center
+    opacity-0 invisible;
+}
+
+.pc-menu__nav__2nd > li:hover .pc-menu__nav__3rd {
+  @apply opacity-100 visible;
+}
+
+.pc-menu__nav__3rd > li {
+  @apply mx-2 text-gray font-normal text-xs h-full flex items-center px-3;
+}
+
+.pc-menu__nav__3rd > li:hover {
+  @apply text-dark-gray font-semibold;
+}
+
+.pc-menu__nav__4th {
+  @apply absolute w-full h-[170px] top-14 left-0 bg-white flex items-center justify-center shadow-base
+    opacity-0 invisible;
+}
+
+.pc-menu__nav__3rd li:hover .pc-menu__nav__4th {
+  @apply opacity-100 visible;
+}
+
+.pc-menu__nav__4th > li {
+  @apply w-[150px] h-[145px] text-dark-gray font-normal text-xs flex flex-col items-center py-2 mr-15;
+}
+
+.pc-menu__nav__4th > li:hover {
+  @apply scale-110;
+}

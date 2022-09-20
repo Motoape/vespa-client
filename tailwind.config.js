@@ -74,6 +74,7 @@ module.exports = {
         '4.5': '1.125rem', // 18px
         '7.5': '1.875rem', // 30px
         '8.75': '2.1875rem', // 35px
+        '10.5': '2.625rem', // 42px
         '12.5': '3.125rem', // 50px
         '15': '3.75rem', // 60px
         '17.5': '4.375rem', // 70px
@@ -86,6 +87,8 @@ module.exports = {
       },
       boxShadow: {
         base: '0px 5px 5px rgb(0 0 0 / 20%)',
+        hover: 'inset 0 -4px 0 #1c69d3',
+        inner: 'inset 0px 7px 3px -3px rgb(0 0 0 / 20%)',
       },
     },
   },

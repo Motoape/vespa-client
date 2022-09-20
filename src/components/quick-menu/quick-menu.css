@@ -30,10 +30,7 @@
 }
 
 .quick-menu__list-item__icon {
-  @apply w-full h-15 laptop:h-[42px];
-  background-repeat: no-repeat;
-  background-size: auto 80%;
-  background-position: center center;
+  @apply w-full h-15 bg-no-repeat bg-[auto_80%] laptop:h-10.5 bg-center;
 }
 
 .quick-menu__list-item__icon[aria-label="consulting"] {
@@ -45,13 +42,13 @@
 }
 
 .quick-menu__list-item__icon[aria-label="location"] {
+  @apply bg-[auto_100%];
   background-image: url(../assets/icons/quick-menu/location.png);
-  background-size: auto 100%;
 }
 
 .quick-menu__list-item__icon[aria-label="motorcycle"] {
+  @apply bg-[auto_100%];
   background-image: url(../assets/icons/quick-menu/motorcycle.png);
-  background-size: auto 100%;
 }
 
 .quick-menu__list-item__label {
