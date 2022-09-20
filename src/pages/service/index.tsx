@@ -5,7 +5,7 @@ import Assuarnce from '@/src/components/service/assurance';
 import Cost from '@/src/components/service/cost';
 import classNames from 'classnames';
 import useIntersectionObserver from '@/src/hooks/useIntersectionObserver';
-import BlurImage from '@components/blur-image/blur-image';
+import BlurImage from '@components/blur-image';
 
 function ServicePage() {
   const navRef = useRef<HTMLElement>(null);

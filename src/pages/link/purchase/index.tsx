@@ -3,7 +3,7 @@ import contractIcon from '@assets/icons/purchase/contract.png';
 import consultIcon from '@assets/icons/purchase/consult.png';
 import { openNewTab } from '@/src/utils/open-new-tab';
 import { KAKAOTALK } from '@constants/links';
-import BlurImage from '@components/blur-image/blur-image';
+import BlurImage from '@components/blur-image';
 
 function Purchase() {
   return (

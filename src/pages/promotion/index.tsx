@@ -1,12 +1,27 @@
-import BlurImage from '@/src/components/blur-image/blur-image';
-import classNames from 'classnames';
-import { useState } from 'react';
+import BlurImage from '@components/blur-image';
+import { useRouter } from 'next/router';
+import useSearch from '@/src/hooks/useSearch';
+import Navigation from '@components/promotion/navigation';
+import Card from '@components/promotion/card';
 
 function PromotionPage() {
-  const [navButtons, setNavButtons] = useState([
-    { id: 'info', text: '차량 프로모션', isActive: true },
-    { id: 'assurance', text: '기타 프로모션', isActive: false },
-  ]);
+  const promotionList = [
+    {
+      type: 1,
+      imageUrl:
+        'https://vespa-bucket.s3.ap-northeast-2.amazonaws.com/promotion/1632a33b-cfef-49f2-b261-e4225d10a983_KakaoTalk_20220325_144012527.jpg',
+      title: '신용카드 최대 36개월 무이자 할부 안내',
+      from: '2022-03-01',
+      to: '2022-12-31',
+      prmtSeq: '9',
+    },
+  ];
+  const router = useRouter();
+  const { type } = router.query;
+
+  const { value, onChange, onEnter, onSearch } = useSearch((keyword) => {
+    console.log('keyword: ', keyword);
+  });
 
   return (
     <section className="promotion">
@@ -16,23 +31,8 @@ function PromotionPage() {
         alt="banner"
         remote
       />
-      <nav className="promotion__navigation">
-        <div className="promotion__navigation-wrapper">
-          {navButtons.map(({ id, text, isActive }) => (
-            <button
-              key={id}
-              data-type={id}
-              className={classNames(
-                isActive ? 'active' : 'inactive',
-                id !== 'info' ? 'border-left' : '',
-              )}
-            >
-              {text}
-            </button>
-          ))}
-        </div>
-      </nav>
-      <article className="promotion__container">
+      <Navigation navigationType={type as string} />
+      <article className="promotion__container laptop:mt-12.5">
         <div className="promotion__container__header">
           <h2 className="text-32 text-[#525252] font-normal pl-2.5 laptop:invisible">
             진행중인 프로모션
@@ -45,12 +45,21 @@ function PromotionPage() {
               <i className="fa fa-chevron-down fa-2xs absolute right-1 pr-2" />
             </div>
             <div className="promotion__container__header__input-wrapper">
-              <input type="text" />
-              <button type="button" className="fas fa-search" />
+              <input
+                type="text"
+                value={value}
+                onChange={onChange}
+                onKeyUp={onEnter}
+              />
+              <button
+                type="button"
+                className="fas fa-search"
+                onClick={onSearch}
+              />
             </div>
           </div>
         </div>
-        <div className="promotion__container__list"></div>
+        <Card promotionList={promotionList} />
       </article>
     </section>
   );

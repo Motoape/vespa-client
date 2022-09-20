@@ -4,7 +4,7 @@ import locationIcon from '@assets/icons/location-map/location.png';
 import subwayIcon from '@assets/icons/location-map/subway.png';
 import busIcon from '@assets/icons/location-map/bus.png';
 import parkingLotIcon from '@assets/icons/location-map/parking-lot.png';
-import BlurImage from '@components/blur-image/blur-image';
+import BlurImage from '@components/blur-image';
 
 function LocationMap() {
   const mapRef = useRef<HTMLDivElement>(null);

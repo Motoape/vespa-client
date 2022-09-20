@@ -3,7 +3,7 @@ import choiceMotorcycleIcon from '@assets/icons/purchase/choice-motorcycle.png';
 import checkSquareIcon from '@assets/icons/driver/check-square.png';
 import { openNewTab } from '@/src/utils/open-new-tab';
 import { NAVER_BOOKING } from '@constants/links';
-import BlurImage from '@components/blur-image/blur-image';
+import BlurImage from '@components/blur-image';
 
 function Driver() {
   return (

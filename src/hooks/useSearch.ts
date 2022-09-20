@@ -17,7 +17,7 @@ function useSearch(callback: (keyword: string) => void) {
     callback(value);
   };
 
-  return { onChange, onEnter, onSearch };
+  return { value, onChange, onEnter, onSearch };
 }
 
 export default useSearch;

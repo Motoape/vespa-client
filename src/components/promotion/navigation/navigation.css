@@ -1,0 +1,19 @@
+.promotion__navigation {
+  @apply py-2.5 shadow-base bg-white border-b-[1px] border-solid border-[#ddd] laptop:top-16
+}
+
+.promotion__navigation-wrapper {
+  @apply grid grid-cols-2 justify-center h-10 w-1/2 mx-auto laptop:w-full;
+}
+
+.promotion__navigation button {
+  @apply text-xs text-[#999] px-4;
+}
+
+.promotion__navigation button.active {
+  @apply font-bold;
+}
+
+.promotion__navigation button.border-left {
+  @apply border-l-[1px] border-solid border-[#d0d0d0];
+}
