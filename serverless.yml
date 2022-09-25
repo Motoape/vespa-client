@@ -8,8 +8,10 @@ vespa-motoape:
     bucketName: ${env.BUCKET_NAME}
     cloudfront:
       distributionId: ${env.CF_DISTRIBUTION_ID}
-      aliases: ['motoape.com']
+      aliases: ['dev.motoape.com']
+      # aliases: ['motoape.com']
       certificate:
         cloudFrontDefaultCertificate: false
-        acmCertificateArn: ${env.ACM_CERTIFICATE_ARN}
+        acmCertificateArn: ${env.DEV_ACM_CERTIFICATE_ARN}
+        # acmCertificateArn: ${env.ACM_CERTIFICATE_ARN}
         sslSupportMethod: 'sni-only'

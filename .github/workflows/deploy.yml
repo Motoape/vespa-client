@@ -3,7 +3,7 @@ name: vespa motoape frontend
 on:
   push:
     branches:
-      - main_temp
+      - main
 
 env:
   AWS_DEFAULT_REGION: us-east-1
@@ -12,6 +12,7 @@ env:
   NODE_OPTIONS: --max_old_space_size=4096
   CF_DISTRIBUTION_ID: ${{ secrets.CF_DISTRIBUTION_ID }}
   ACM_CERTIFICATE_ARN: ${{ secrets.ACM_CERTIFICATE_ARN }}
+  DEV_ACM_CERTIFICATE_ARN: ${{ secrets.DEV_ACM_CERTIFICATE_ARN }}
   BUCKET_NAME: vespa-motoape-frontend
 
 jobs:
@@ -24,7 +25,7 @@ jobs:
       - name: Setup node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: "16"
 
       - name: Install dependencies
         run: yarn install --immutable --immutable-cache
@@ -32,7 +33,7 @@ jobs:
       - name: Export env from aws ssm
         uses: nolmungshemung/chamber-action@main
         with:
-          args: export --format dotenv --output-file .env dev/motoape-frontend
+          args: export --format dotenv --output-file .env motoape-frontend
 
       - name: Deploy to AWS
         run: yarn deploy
