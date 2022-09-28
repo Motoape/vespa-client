@@ -1,0 +1,23 @@
+.sns {
+  @apply max-w-base mx-auto px-2.5 laptop:px-5;
+}
+
+.sns__title {
+  @apply mt-17.5 font-bold text-dark-gray text-center laptop:text-sm laptop:mt-9;
+}
+
+.sns__list {
+  @apply grid grid-cols-4 gap-5 my-25 tablet:grid-rows-2 tablet:grid-cols-2 tablet:my-7.5;
+}
+
+.sns__list-item {
+  @apply p-5 border-[1px] border-solid border-[#d2d2d2] cursor-pointer;
+}
+
+.sns__list-item__comment {
+  @apply mt-3 font-bold tablet:text-[0.8rem];
+}
+
+.sns__list-item__shortcut {
+  @apply pt-5 font-bold text-[1.2rem] tablet:text-base;
+}
