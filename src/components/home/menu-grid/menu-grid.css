@@ -1,0 +1,28 @@
+.menu-grid {
+  @apply w-full max-w-base mx-auto px-3 mt-[110px] pc:mt-7.5;
+}
+
+.menu-grid__list {
+  @apply grid grid-cols-2 grid-rows-2 gap-2 tablet:grid-rows-4 tablet:grid-cols-none;
+}
+
+.menu-grid__list-item {
+  @apply relative p-[15px] border-[1px] border-solid border-[#ddd];
+}
+
+.menu-grid__list-item__divider {
+  @apply w-7.5 mt-7.5 mb-2.5 border-[5px] border-solid border-[#3a3a3a] pc:border-2;
+}
+
+.menu-grid__list-item__comment {
+  @apply text-lg text-semi-dark-gray pb-5;
+}
+
+.menu-grid__list-item__shortcut {
+  @apply absolute bottom-3 text-sm font-black w-full text-left;
+}
+
+.menu-grid__list-item i.fa-chevron-right {
+  @apply mr-[5px] text-gray;
+  -webkit-text-stroke: 1.5px #fff;
+}
