@@ -81,6 +81,10 @@ module.exports = {
         '17.5': '4.375rem', // 70px
         '22.5': '5.625rem', // 90px
         '25': '6.25rem', // 100px
+        '2/5': '40%',
+      },
+      fontFamily: {
+        gmarketSansMedium: 'GmarketSansMedium',
       },
       fontSize: {
         '10': '0.625rem', // 10px

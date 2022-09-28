@@ -1,0 +1,47 @@
+.representative-model {
+  @apply w-full max-w-[1800px] mx-auto mt-10
+    pc:mt-0;
+}
+
+.representative-model__list {
+  @apply grid grid-cols-2 gap-3
+    laptop:grid-cols-1 laptop:gap-2;
+}
+
+.representative-model__list-item {
+  @apply relative;
+}
+
+.representative-model__list-item:first-child {
+  @apply col-[1_/_span_2]
+    laptop:col-auto;
+}
+
+.representative-model__list-item__shortcut {
+  @apply absolute bottom-5 left-5;
+}
+
+.representative-model__list-item__shortcut h2 {
+  @apply text-white font-normal text-2xl font-gmarketSansMedium
+    tablet:text-lg;
+}
+
+.representative-model__list-item__shortcut button {
+  @apply w-[311px] h-[51px] mt-2.5 text-base text-white border-2 border-solid border-white
+    tablet:w-52 tablet:h-10 tablet:text-sm;
+}
+
+.representative-model__list-item__shortcut.main {
+  @apply top-2/5 left-15 -translate-y-2/5
+    laptop:left-5;
+}
+
+.representative-model__list-item__shortcut.main h2 {
+  @apply font-black text-42 text-black h-10
+    tablet:text-3xl;
+}
+
+.representative-model__list-item__shortcut.main button {
+  @apply w-[340px] h-15 mt-[15px] text-lg bg-[#939393] text-white font-black border-none
+    tablet:w-52 tablet:h-11 tablet:text-base;
+}
