@@ -18,7 +18,7 @@
 }
 
 .quick-menu__fixed-list-item__label {
-  @apply inline-block ml-1 text-base font-bold text-[#424242] laptop:text-xs;
+  @apply inline-block ml-1 text-base font-bold text-[#424242] cursor-pointer laptop:text-xs;
 }
 
 .quick-menu__list {

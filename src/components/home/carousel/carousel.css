@@ -1,0 +1,106 @@
+.carousel {
+  @apply max-w-base mx-auto mt-8.75 px-3;
+}
+
+.carousel .slick-slider {
+  @apply w-[calc(100%-90px)] mx-auto;
+}
+
+.carousel .slick-slider .slick-slide {
+  @apply px-2.5;
+}
+
+.carousel .slick-prev {
+  @apply -left-10;
+}
+
+.carousel .slick-next {
+  @apply -right-8;
+}
+
+.carousel .slick-prev:before, .carousel .slick-next:before {
+  content: '';
+}
+
+.carousel-chevron {
+  @apply text-45 text-[#B1B1B1];
+  -webkit-text-stroke: 4px #FFF;
+}
+
+.carousel__box * {
+  @apply transition-all duration-300;
+}
+
+.carousel .carousel__item {
+  @apply relative overflow-hidden h-[380px] pc:h-[300px] tablet:h-[650px] mobile:h-[500px];
+}
+
+.carousel .carousel__item-title {
+  @apply absolute top-5 left-0 right-0 w-full m-auto text-center text-white z-10;
+}
+
+.carousel .carousel__item-title span:first-child {
+  @apply w-full block pc:text-xs tablet:text-lg mobile:text-xs;
+}
+
+.carousel .carousel__item-title span:last-child {
+  @apply font-black text-2xl pc:text-lg tablet:text-3xl mobile:text-lg;
+}
+
+.carousel .carousel__item-description {
+  @apply absolute left-0 right-0 bottom-5 w-[calc(100%-40px)] mx-auto text-left opacity-0;
+}
+
+.carousel .carousel__item-description.show {
+  @apply absolute left-0 right-0 bottom-5 w-[calc(100%-40px)] mx-auto text-left opacity-100;
+}
+
+.carousel .carousel__item-description p {
+  @apply mt-[15px] text-xs text-white;
+}
+
+.carousel .carousel__item-description i {
+  @apply text-[#2664af] mr-[5px];
+}
+
+.carousel .carousel__detail-btn {
+  @apply w-full py-4.5 border-4 border-solid border-[#4e4e4e] bg-white text-[#4e4e4e] text-sm mobile:text-xs;
+}
+
+.carousel .carousel__detail-btn.active {
+  @apply bg-[#2664af] text-white border-[#2664af];
+}
+
+@media all and (max-width: 454px) {
+	.carousel .carousel__item {
+		height: 350px;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.carousel .carousel__item {
+		height: 295px;
+	}
+
+  .items .item label {
+		font-size: 18px;
+	}
+
+	.items .item label span {
+		font-size: 12px;
+	}
+}
+
+@media all and (max-width: 320px) {
+	.carousel .carousel__item {
+		height: 250px;
+	}
+}
+
+.carousel .carousel__item-image__box .blur-image img {
+  @apply !-mt-[0%];
+}
+
+.carousel .carousel__item-image__box.up .blur-image img {
+  @apply !-mt-[14%] pc:!-mt-[10%];
+}

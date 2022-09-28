@@ -1,5 +1,6 @@
 name: vespa-motoape
 # 참고: https://github.com/serverless-nextjs/serverless-next.js/issues/184#issuecomment-719137988
+# serverless v3 사용 시 deploy 버그해결: https://github.com/serverless-nextjs/serverless-next.js/issues/2320#issuecomment-1023668772
 # deploy.yml의 env를 주입해서 사용
 vespa-motoape:
   component: "@sls-next/serverless-component@3.4.0"

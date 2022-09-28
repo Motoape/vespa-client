@@ -15,6 +15,12 @@
 	padding: 0;
 	margin: 0;
 	outline: 0;
+}
+
+/**
+ * slick css 와 transition 효과가 겹치지 않게 적용
+ */
+*:not(.slick-list *) {
   @apply transition-all duration-300;
 }
 

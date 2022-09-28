@@ -84,6 +84,8 @@ module.exports = {
         '10': '0.625rem', // 10px
         '21': '1.3125rem', // 21px
         '32': '2rem', // 32px
+        '42': '2.625rem', // 42px
+        '45': '2.8125rem', // 45px
       },
       boxShadow: {
         base: '0px 5px 5px rgb(0 0 0 / 20%)',

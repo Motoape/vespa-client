@@ -1,7 +1,14 @@
-import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { MouseEvent } from 'react';
 import BlurImage from '../../blur-image';
 
 function PcMenu() {
+  const router = useRouter();
+
+  const onMenuItemClick = (event: MouseEvent<HTMLLIElement>) => {
+    router.push(event.currentTarget.dataset.url as string);
+  };
+
   return (
     <nav className="pc-menu__nav__1st">
       <ul className="pc-menu__nav__1st-list">
@@ -70,14 +77,14 @@ function PcMenu() {
             <li>정품 악세사리</li>
           </ul>
         </li>
-        <li>
-          <Link href="/promotion">PROMOTION</Link>
+        <li data-url="/promotion" onClick={onMenuItemClick}>
+          <span>PROMOTION</span>
         </li>
-        <li>
-          <Link href="/service">SERVICE</Link>
+        <li data-url="/service" onClick={onMenuItemClick}>
+          <span>SERVICE</span>
         </li>
-        <li>
-          <Link href="/link/driver">시승신청</Link>
+        <li data-url="/link/driver" onClick={onMenuItemClick}>
+          <span>시승신청</span>
         </li>
       </ul>
     </nav>
