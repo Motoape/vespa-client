@@ -10,6 +10,10 @@
   @apply px-2.5;
 }
 
+.carousel .slick-arrow {
+  @apply w-7.5 h-[45px]
+}
+
 .carousel .slick-prev {
   @apply -left-10;
 }
