@@ -27,6 +27,9 @@ queryClient.setDefaultOptions({
     retry: 1,
     refetchOnWindowFocus: false,
   },
+  mutations: {
+    retry: 0,
+  },
 });
 
 function MyApp({ Component, pageProps }: AppProps) {

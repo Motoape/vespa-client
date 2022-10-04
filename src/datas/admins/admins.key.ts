@@ -1,0 +1,10 @@
+export const ADMINS = '/admins';
+export const ADMINS_DASHBOARDS = `${ADMINS}/dashboards`;
+export const ADMINS_DISCOVER = `${ADMINS}/discover`;
+export const ADMINS_DISCOVERS = `${ADMINS}/discovers`;
+export const ADMINS_ACCESSORIES = `${ADMINS}/accessories`;
+export const ADMINS_ACCESSORIES_CATEGORY = `${ADMINS_ACCESSORIES}/category`;
+export const ADMINS_ACCESSORIES_ALL_CATEGORY = `${ADMINS_ACCESSORIES}/all-category`;
+export const ADMINS_ACCESSORIES_SUB_CATEGORY = `${ADMINS_ACCESSORIES}/sub-category`;
+export const ADMINS_PROMOTIONS = `${ADMINS}/promotions`;
+export const ADMINS_PROMOTIONS_BANNER = `${ADMINS}/promotions/banners`;
