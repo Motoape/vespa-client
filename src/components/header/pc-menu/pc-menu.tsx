@@ -1,25 +1,36 @@
 import { useRouter } from 'next/router';
 import { MouseEvent } from 'react';
 import BlurImage from '../../blur-image';
+import classnames from 'classnames';
 
 function PcMenu() {
   const router = useRouter();
+  const { pathname } = router;
+  console.log('pathname: ', pathname);
 
   const onMenuItemClick = (event: MouseEvent<HTMLLIElement>) => {
     router.push(event.currentTarget.dataset.url as string);
   };
 
+  const accessoriesMenuUlClassnames = classnames('pc-menu__nav__2nd', {
+    '!shadow-inner !opacity-100 !visible': pathname.includes('accessories'),
+  });
+
+  const accessoriesMenuLiClassnames = classnames({
+    '!shadow-hover !text-dark-gray': pathname.includes('accessories'),
+  });
+
   return (
     <nav className="pc-menu__nav__1st">
       <ul className="pc-menu__nav__1st-list">
         <li>
-          MODEL
+          <h1>MODEL</h1>
           <ul className="pc-menu__nav__2nd">
             <li>
-              VESPA
+              <h2>VESPA</h2>
               <ul className="pc-menu__nav__3rd">
                 <li>
-                  PRIMAVERA
+                  <h3>PRIMAVERA</h3>
                   <ul className="pc-menu__nav__4th">
                     <li>
                       <BlurImage
@@ -63,28 +74,42 @@ function PcMenu() {
                     </li>
                   </ul>
                 </li>
-                <li>SPRINT</li>
-                <li>GTS</li>
-                <li>GTV</li>
+                <li>
+                  <h3>SPRINT</h3>
+                </li>
+                <li>
+                  <h3>GTS</h3>
+                </li>
+                <li>
+                  <h3>GTV</h3>
+                </li>
               </ul>
             </li>
-            <li>PIAGGIO</li>
+            <li>
+              <h2>PIAGGIO</h2>
+            </li>
           </ul>
         </li>
         <li>
-          ACCESSORIES&PARTS
-          <ul className="pc-menu__nav__2nd">
-            <li>정품 악세사리</li>
+          <h1>ACCESSORIES&PARTS</h1>
+          <ul className={accessoriesMenuUlClassnames} role="accessories-nav">
+            <li
+              className={accessoriesMenuLiClassnames}
+              data-url="/accessories"
+              onClick={onMenuItemClick}
+            >
+              <h2>정품 악세사리</h2>
+            </li>
           </ul>
         </li>
         <li data-url="/promotion" onClick={onMenuItemClick}>
-          <span>PROMOTION</span>
+          <h1>PROMOTION</h1>
         </li>
         <li data-url="/service" onClick={onMenuItemClick}>
-          <span>SERVICE</span>
+          <h1>SERVICE</h1>
         </li>
         <li data-url="/link/driver" onClick={onMenuItemClick}>
-          <span>시승신청</span>
+          <h1>시승신청</h1>
         </li>
       </ul>
     </nav>

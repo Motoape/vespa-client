@@ -36,6 +36,7 @@
     "@tanstack/react-query-devtools": "^4.3.5",
     "axios": "^0.24.0",
     "classnames": "^2.3.2",
+    "daisyui": "^2.31.0",
     "msw": "^0.38.2",
     "next": "^12.3.0",
     "next-seo": "^5.1.0",

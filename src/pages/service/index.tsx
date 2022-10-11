@@ -60,7 +60,7 @@ function ServicePage() {
   });
 
   return (
-    <section className="service">
+    <main className="service">
       <div className="py-5 pc:py-0" />
       <BlurImage src={bannerImg} alt="banner" />
       <nav ref={navRef} className="service__navigation">
@@ -127,7 +127,7 @@ function ServicePage() {
           </div>
         </div>
       </div>
-    </section>
+    </main>
   );
 }
 

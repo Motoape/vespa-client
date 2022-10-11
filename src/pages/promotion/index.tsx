@@ -24,7 +24,7 @@ function PromotionPage() {
   });
 
   return (
-    <section className="promotion">
+    <main className="promotion">
       <div className="py-5 pc:py-0" />
       <BlurImage
         src="https://vespa-bucket.s3.ap-northeast-2.amazonaws.com/promotion/2aa1dd3d-d157-49b0-8c51-08ad6f34a9e6_12312.jpg"
@@ -34,7 +34,7 @@ function PromotionPage() {
       <Navigation navigationType={type as string} />
       <article className="promotion__container laptop:mt-12.5">
         <div className="promotion__container__header">
-          <h2 className="text-32 text-[#525252] font-normal pl-2.5 laptop:invisible">
+          <h2 className="text-32 text-[#525252] font-normal pl-2.5 laptop:invisible laptop:text-10">
             진행중인 프로모션
           </h2>
           <div className="flex">
@@ -61,7 +61,7 @@ function PromotionPage() {
         </div>
         <Card promotionList={promotionList} />
       </article>
-    </section>
+    </main>
   );
 }
 

@@ -1,0 +1,29 @@
+.accessories__options {
+  @apply mt-22
+    tablet:mt-10
+    mobile:mt-0;
+}
+
+.accessories__options-title {
+  @apply font-bold text-2xl
+    mobile:text-base mobile:px-5;
+}
+
+.accessories__options-list {
+  /** flex-root 속성은 float 속성과 같이 쓸 때 clear:both 해주는 역할을 한다 **/
+  @apply grid grid-cols-5 gap-[1px] min-h-12 mt-5 mb-10
+    mobile:flex mobile:overflow-x-auto mobile:my-1.25 mobile:px-2.5;
+}
+
+.accessories__options-list li {
+  @apply flex items-center h-10 px-2.5 outline outline-1 outline-[#b6b6b6] cursor-pointer text-[#7b7979]
+    mobile:items-end mobile:overflow-visible mobile:outline-none;
+}
+
+.accessories__options-list li > h3 {
+  @apply text-shorten;
+}
+
+.accessories__options-list li.active {
+  @apply outline-offset-1 outline-blue text-blue font-semibold mobile:outline-none;
+}

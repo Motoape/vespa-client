@@ -1,5 +1,5 @@
 .home-quick-menu {
-  @apply max-w-[1800px] w-full mx-auto mt-15;
+  @apply max-w-[1800px] w-full mx-auto mt-15 laptop:mt-7.5;
 }
 
 .home-quick-menu__list {

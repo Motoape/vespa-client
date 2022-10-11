@@ -7,9 +7,9 @@
 }
 
 .promotion__container__list-card h4 {
-  @apply my-2.5 ml-2.5 text-sm text-gray font-semibold overflow-hidden text-ellipsis whitespace-nowrap;
+  @apply my-2.5 ml-2.5 text-sm text-gray font-semibold text-shorten;
 }
 
 .promotion__container__list-card p {
-  @apply text-xs ml-2.5 text-gray font-normal overflow-hidden text-ellipsis whitespace-nowrap;
+  @apply text-xs ml-2.5 text-gray font-normal text-shorten;
 }

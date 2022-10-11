@@ -1,0 +1,20 @@
+.accessories {
+  @apply w-[calc(80%)] mx-auto p-12.5
+    wide:w-[calc(100%)]
+    mobile:px-0 py-2 pb-5;
+}
+
+.accessories__comment {
+  @apply p-[15px] w-full text-center border-t-2 border-solid border-t-[#668cbe] border-b-2 border-b-[#d7d7d7]
+    mobile:hidden;
+}
+
+.accessories__sort-navigation button {
+  @apply my-[15px] px-[15px] text-[#9c9b9b] font-semibold border-r-[1px] border-solid border-[#d7d7d7]
+    tablet:text-[0.8rem] tablet:px-2
+    mobile:my-1.25;
+}
+
+.accessories__sort-navigation button.active {
+  @apply text-dark;
+}

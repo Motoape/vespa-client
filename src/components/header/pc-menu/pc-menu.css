@@ -23,12 +23,16 @@
   @apply mx-8 text-gray font-medium text-sm h-full flex items-center px-2;
 }
 
+.pc-menu__nav__2nd[role=accessories-nav] {
+  @apply bg-[#f8f8f8];
+}
+
 .pc-menu__nav__2nd > li:hover {
   @apply shadow-hover text-dark-gray;
 }
 
 .pc-menu__nav__1st-list > li:hover .pc-menu__nav__2nd {
-  @apply shadow-inner opacity-100 visible;
+  @apply shadow-inner opacity-100 visible z-10;
 }
 
 .pc-menu__nav__3rd {

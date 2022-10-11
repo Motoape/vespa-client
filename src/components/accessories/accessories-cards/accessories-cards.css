@@ -1,0 +1,25 @@
+.accessories__container__list {
+  @apply w-full grid grid-cols-4
+    laptop:mt-5 laptop:grid-cols-2;
+}
+
+.accessories__container__list-card {
+  @apply m-2.5 px-5
+    mobile:m-2.5 mobile:px-7.5;
+}
+
+.accessories__container__list-card h4 {
+  @apply py-[3px] text-sm font-bold text-shorten;
+}
+
+.accessories__container__list-card h5 {
+  @apply text-xs text-[#5d5a5a] font-normal text-shorten;
+}
+
+.accessories__container__list-card p {
+  @apply mt-5 pr-2.5 text-lg font-bold text-dark text-right text-shorten;
+}
+
+.accessories__container__list-card > button {
+  @apply w-full text-sm text-white text-center bg-blue my-5 border-[1px] border-solid border-blue p-[5px];
+}
